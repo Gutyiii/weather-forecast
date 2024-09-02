@@ -1,0 +1,105 @@
+.main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto; 
+}
+  
+.content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+  
+.today {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.todayCity {
+  font-size: 1.5em;
+}
+  
+.todayTemperature {
+  font-size: 2em;
+}
+  
+.todayCondition {
+  font-size: 1em;
+}
+  
+.weekly {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+  
+.weekDay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 5px 0;
+  margin-top: 2%;
+}
+  
+.weekDay div {
+  flex: 1;
+  text-align: center;
+}
+  
+.weekDay div:first-child {
+  text-align: left;
+}
+  
+.weekDay div:last-child {
+  text-align: right;
+}
+  
+.weatherIcon {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+}
+  
+.chart {
+  width: 100%; 
+  margin-top: 2%;
+  display: flex;
+  justify-content: center; 
+}
+  
+@media (max-width: 1080px) {
+  .content {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .today,
+  .weekly,
+  .chart {
+    width: 100%;
+    margin-bottom: 20px; 
+  }
+
+  .weekDay {
+    margin: 10px 0;
+  }
+}
+  
+@media (min-width: 1081px) {
+  .chart {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+  
